@@ -76,7 +76,7 @@ namespace WindowsFormsApp1
             saveFileDialog1.Filter = "JPG(*.JPG)|*.jpg";
             if(saveFileDialog1.ShowDialog() == DialogResult.OK)
             {
-                if(pictureBox1.Image == null)
+                if(pictureBox1.Image != null)
                 {
                     pictureBox1.Image.Save(saveFileDialog1.FileName);
                 }
